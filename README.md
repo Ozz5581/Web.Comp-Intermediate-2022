@@ -1,7 +1,9 @@
 # Web.Comp-Intermediate-2022
 Answers for Grok Course: Web.Comp (Intermediate) 2022
 
-# 1.1 >
+## Notice: Weeks 1-3 are Due on Sun 5 Jun 2022 at 9:01 pm, Copy quick! 
+
+# 1.1 - Week 1 Part 1 >
 
 ## Pizza Place
 
@@ -213,7 +215,7 @@ div {
 }
 ```
 
-# 1.2 >
+# 1.2 - Week 1 Part 2 >
 
 ## WC Fest
 
@@ -439,7 +441,7 @@ div {
 }
 ```
 
-# 2.1 >
+# 2.1 - Week 2 Part 1 >
 
 ## You're Invited!
 
