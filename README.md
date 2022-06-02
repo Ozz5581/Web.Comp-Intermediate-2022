@@ -1684,7 +1684,189 @@ nav {
 ```
 
 ## Trashy but Stylish
-```Todo```
+
+#### HTML Code (index.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+<nav>
+    <a class="nav-link active" href="index.html"><span class="fa fa-name"></span>Repair or replace bins</a>
+    <a class="nav-link" href="report.html"><span class="fa fa-name"></span>Report illegal dumping</a>
+    <a class="nav-link" href="book.html"><span class="fa fa-name"></span>Hard waste collection</a>
+</nav>
+
+<form>
+    <h2>Request a bin repair or replacement</h2>
+
+    <div>
+        <p>Nature of request*</p>
+        <label>
+            <input type="radio" id="request-lid" name="request" value="lid">
+            Missing / damaged lid (repair)
+        </label>
+        <label>
+            <input type="radio" id="request-wheels" name="request" value="wheel">
+            Missing / damaged wheels (repair)
+        </label>
+        <label>
+            <input type="radio" id="request-bin" name="request" value="bin">
+            Missing / damaged bin body (replace)
+        </label>
+    </div>
+
+    <div>
+        <p>Type of bin*</p>
+        <label>
+            <input type="radio" id="bin-rubbish" name="bin" value="rubbish">
+            General rubbish waste (red or dark green lid)
+        </label>
+        <label>
+            <input type="radio" id="bin-recycling" name="bin" value="recycling">
+            Recycling (yellow lid)
+        </label>
+        <label>
+            <input type="radio" id="bin-garden" name="bin" value="garden">
+            Garden green waste (light green lid)
+        </label>
+    </div>
+
+    <div>
+        <p>Size of bin*</p>
+        <label>
+            <input type="radio" id="size-120" name="size" value="120">
+            120L (small wheelie bin)
+        </label>
+        <label>
+            <input type="radio" id="size-240" name="size" value="240">
+            240L (large wheelie bin)
+        </label>
+        <label>
+            <input type="radio" id="size-660" name="size" value="660">
+            660L (small skip bin)
+        </label>
+        <label>
+            <input type="radio" id="size-1100" name="size" value="1100">
+            1100L (large skip bin)
+        </label>
+    </div>
+
+    <div>
+        <label for="details">Special instructions (optional)</label>
+        <input type="text" id="details" name="details" size=40 placeholder="e.g. property hard to find, preferred times">
+    </div>
+    <div>
+        <input class="button" type="submit" value="Submit">
+    </div>
+</form>
+```
+
+#### HTML Code (report.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+<nav>
+    <a class="nav-link" href="index.html"><span class="fa fa-name"></span>Repair or replace bins</a>
+    <a class="nav-link active" href="report.html"><span class="fa fa-name"></span>Report illegal dumping</a>
+    <a class="nav-link" href="book.html"><span class="fa fa-name"></span>Hard waste collection</a>
+</nav>
+
+<form>
+    <h2>Report illegal dumping location</h2>
+
+    <div>
+        <label for="address">Street Address*</label>
+        <input type="text" id="address" name="address" size=40 required>
+    </div>
+    <div>
+        <label for="suburb">Suburb*</label>
+        <input type="text" id="suburb" name="suburb" size=30 required>
+    </div>
+    <div>
+        <label for="postcode">Postcode*</label>
+        <input type="text" id="postcode" name="postcode" size=5 required>
+    </div>
+
+    <div>
+        <label for="date">Date observed*</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <div>
+        <label for="details">Details (optional)</label>
+        <input type="text" id="details" name="details" size=40 placeholder="Provide any extra details here">
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="followup" name="followup">
+            I want to be contacted about this enquiry.
+        </label>
+    </div>
+    <div>
+        <input class="button" type="submit" value="Submit">
+    </div>
+</form>
+```
+
+#### HTML Code (book.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+<nav>
+    <a class="nav-link" href="index.html"><span class="fa fa-name"></span>Repair or replace bins</a>
+    <a class="nav-link" href="report.html"><span class="fa fa-name"></span>Report illegal dumping</a>
+    <a class="nav-link active" href="book.html"><span class="fa fa-name"></span>Hard waste collection</a>
+</nav>
+
+<form>
+    <h2>Book a hard waste collection</h2>
+    <div>
+        <p>What types of hard rubbish do you intend to put out for collection?</p>
+        <label>
+            <input type="checkbox" id="type-mattress" name="type-mattress">
+            Mattresses
+        </label>
+        <label>
+            <input type="checkbox" id="type-hard" name="type-hard">
+            Hard and metal waste (up to 2 square metres)
+        </label>
+        <label>
+            <input type="checkbox" id="type-green" name="type-green">
+            Green waste (up to 4 square metres)
+        </label>
+        <label>
+            <input type="checkbox" id="type-other" name="type-other">
+            Other (please describe)
+        </label>
+        <input type="text" id="describe-other" name="describe-other" size=40 placeholder="e.g. furniture items, washing machine, etc.">
+    </div>
+
+    <div>
+        <p>Where will you leave your hard rubbish collection?*</p>
+        <label>
+            <input type="radio" id="where-frontyard" name="where" value="frontyard">
+            Frontyard
+        </label>
+        <label>
+            <input type="radio" id="where-driveway" name="where" value="driveway">
+            Driveway
+        </label>
+    </div>
+
+    <div>
+        <p>By submitting this application for a hard rubbish collection online, all information supplied will be provided directly to Council and its contractor as an interested third party to enable the service to occur.</p>
+        <label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            I understand and accept the above terms.*
+        </label>
+    </div>
+    <div>
+        <input class="button" type="submit" value="Submit">
+    </div>
+</form>
+```
 
 # 4.1 - Week 4 Part 1 >
 
