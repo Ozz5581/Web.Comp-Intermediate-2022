@@ -1603,7 +1603,85 @@ nav {
 ```
 
 ## Side Nav
-```Todo```
+
+#### CSS Code (main.css)
+```css
+body {
+  font-size: 20px;
+  padding-top: 60px;
+  padding-left: 300px;
+}
+
+form {
+  width: 450px;
+  margin: 30px auto;
+  margin-top: 60px;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+input {
+  padding: 15px;
+  border: 2px solid lightgray;
+}
+
+label {
+  display: block;
+  line-height: 1.8;
+}
+
+.button {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 40px;
+  background: seagreen;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid seagreen;
+}
+
+.button:hover {
+  border-color: mediumseagreen;
+  background: mediumseagreen;
+  color: white;
+}
+
+nav {
+  background-color: mediumseagreen;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 300px;
+  bottom: 0;
+
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  width: 260px;
+}
+
+.active {
+  background-color: seagreen;
+}
+
+.nav-link:hover {
+  background-color: seagreen;
+}
+```
 
 ## Trashy but Stylish
 ```Todo```
