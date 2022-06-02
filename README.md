@@ -237,7 +237,19 @@ a {
 }
 
 a.main-action {
-
+ display: inline-block;
+ border-radius: 2px;
+ background-color: black;
+ color: white;
+ border: 4px;
+ text-decoration: none;
+ border-style: solid;
+ border-color: black;
+ font-size: 25px;
+ padding-left: 17px;
+ padding-right: 17px;
+ padding-top: 16px;
+ padding-bottom: 16px;
 }
 
 div {
