@@ -1869,9 +1869,57 @@ nav {
 ```
 
 # 4.1 - Week 4 Part 1 >
-`todo`
+
+## Reshop
+
+#### HTML Code (index.html)
+```html
+<link rel="stylesheet" href="home.css">
+
+<nav>
+  <a class="logo" href="#">Reshop</a>
+  <a class="nav-link" href="#">Buy</a>
+  <a class="nav-link" href="#">Sell</a>
+  <a class="nav-link" href="#">Blog</a>
+</nav> 
+
+
+<div class="content">
+  <h2>
+    Find unique pieces.<br>
+    Rehome old favourites.<br>
+    Stay fashionable &amp; sustainable.
+  </h2>
+  <p>
+    <a class="button" href="step1.html">Buy</a>
+    <a class="button secondary" href="#">Sell</a>
+  </p>
+</div>
+```
+
+#### HTML Code (step1.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<a class="button" href="step2.html">ok</a>
+```
+
+#### HTML Code (step2.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<a class="button" href="step3.html">lol</a>
+```
+
+#### HTML Code (step3.html)
+```html
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<a class="button" href="success.html">yes</a>
+```
 
 # 4.2 - Week 4 Part 2 >
-`todo`
 
-Last Updated: 10:11 27/05/2022
+`:(`
+
+Last Updated: 19:15 03/06/2022
